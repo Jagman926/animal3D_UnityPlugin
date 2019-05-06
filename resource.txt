@@ -1,0 +1,9 @@
+https://forum.unity.com/threads/matching-c-structure-with-a-c-one.454072/
+
+https://www.alanzucconi.com/2015/10/11/how-to-write-native-plugins-for-unity/
+
+https://stackoverflow.com/questions/315051/using-a-class-defined-in-a-c-dll-in-c-sharp-code
+
+https://stackoverflow.com/questions/30123636/pass-structure-or-class-from-c-dll-to-c-sharp-unity-3d
+
+https://social.msdn.microsoft.com/Forums/vstudio/en-US/a63c0ba3-7617-4fed-8afc-70375c2a4cb3/extern-quotcquot-with-a-struct?forum=vclanguage
