@@ -94,6 +94,12 @@
     <Filter Include="Resource Files\A3_DEMO\glsl\4x\fs\08-morphing">
       <UniqueIdentifier>{5bc411e5-6242-40f3-a5f5-4be289de32ef}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\UnityPlugin">
+      <UniqueIdentifier>{7236ea20-71f4-457e-b58d-2c403657da6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\UnityPlugin">
+      <UniqueIdentifier>{f6b5ec89-af58-449d-add2-345b3a4729c5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="_src_win\main_dll.c">
@@ -127,7 +133,10 @@
       <Filter>Source Files\common\A3_DEMO\_demo_graphics</Filter>
     </ClCompile>
     <ClCompile Include="UnityDllGate.cpp">
-      <Filter>Source Files\common\A3_DEMO</Filter>
+      <Filter>Source Files\common\UnityPlugin</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugCPP.cpp">
+      <Filter>Source Files\common\UnityPlugin</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -146,11 +155,11 @@
     <ClInclude Include="..\..\..\source\animal3D-DemoProject\A3_DEMO\_demo_graphics\a3_RenderPipeline.h">
       <Filter>Header Files\A3_DEMO\_demo_graphics</Filter>
     </ClInclude>
-    <ClInclude Include="UnityDllGate.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="UnityDemoState.h">
       <Filter>Source Files\common\A3_DEMO\a3_DemoState</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugCPP.h">
+      <Filter>Header Files\UnityPlugin</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

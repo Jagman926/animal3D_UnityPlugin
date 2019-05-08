@@ -1,21 +1,12 @@
 #include <a3_dylib_config_export.h>
-#include "UnityDllGate.h"
 #include <SDKDDKVer.h>
 #include <windows.h>
 #include <GL/glew.h>
 #include "UnityDemoState.h"
 
+#include "DebugCPP.h"
+
 UnityDemoState pUnityDemoState;
-
-extern "C"
-{
-
-	int A3DYLIBSYMBOL foo()
-	{
-		return 26;
-	}
-
-}
 
 void Rendering()
 {
@@ -113,4 +104,17 @@ extern "C" void __declspec(dllexport) __stdcall SetBackgroundColor(float r, floa
 	pUnityDemoState.g = g;
 	pUnityDemoState.b = b;
 	pUnityDemoState.a = a;
+}
+
+extern "C" void __declspec(dllexport) __stdcall TestDebugCalls()
+{
+	Debug::Log("Hellow Red", Color::Red);
+	Debug::Log("Hellow Green", Color::Green);
+	Debug::Log("Hellow Blue", Color::Blue);
+	Debug::Log("Hellow Black", Color::Black);
+	Debug::Log("Hellow White", Color::White);
+	Debug::Log("Hellow Yellow", Color::Yellow);
+	Debug::Log("Hellow Orange", Color::Orange);
+	Debug::Log(true, Color::Black);
+	Debug::Log(false, Color::Red);
 }
